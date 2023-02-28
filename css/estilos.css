@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+.cabecalho{
+    background-color: #1D3557;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;  
+    box-sizing: border-box;
+}
+
+.cabecalho > h1{
+    color: #A8DADC;
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-family: 'Zeyada';
+    line-height: auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.menu > *{
+    color: #F1FAEE;
+    font-family: 'Sansita', sans-serif;;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: #457B9D;
+    box-sizing: border-box;
+}
+
+main > div{
+    margin-top: 15px;
+}
+
+main >div:first-child{
+    margin-top: 45px;
+}
+
+.filtro > h2{
+    color: #F1FAEE;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 30px;
+}
+
+.filtro > input{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.filtro-botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.filtro-botoes > button{
+    color: #F1FAEE;
+    align-items: center;
+    background-color: #1D3557;
+    min-width: 80px;
+    height: 35px;
+    border: 1px solid transparent;
+    margin-right: 15px;
+}
+
+.cardapio{
+    background-color: green;
+    height: 200px;
+}
+
+.blog{
+    background-color: blue;
+    height: 200px;
+}
+
+@media (max-width: 500px)
+{
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .menu > *{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    main >div:first-child{
+        margin-top: 25px;
+    }
+
+    .filtro > h2{
+        text-align: center;
+    }
+
+    .filtro > input{
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .filtro-botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtro-botoes > button{
+        margin-bottom: 15px;
+        margin-right: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 40%;
+    }
+}

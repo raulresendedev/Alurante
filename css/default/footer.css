@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+
+footer{
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 50px;
+}
+
+.footer-sections{
+    width: 20%;
+}
+
+.footer-sections > h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.footer-sections:nth-child(2){
+    text-align: center;
+}
+
+.footer-sections > ul > li{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0px !important;
+}
+
+p{
+    color: #F1FAEE;
+    font-family: 'Sansita', sans-serif;;
+}
+
+.footer-sections > input{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}

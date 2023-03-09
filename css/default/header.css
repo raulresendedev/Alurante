@@ -1,0 +1,33 @@
+.cabecalho{
+    background-color: #1D3557;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;  
+    box-sizing: border-box;
+}
+
+.cabecalho > h1{
+    color: #A8DADC;
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-family: 'Zeyada';
+    line-height: auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+ul > *{
+    color: #F1FAEE;
+    font-family: 'Sansita', sans-serif;;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}

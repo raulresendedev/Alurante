@@ -1,0 +1,278 @@
+:root {
+    --azul-escuro: #1D3557;
+    --secao--padding: 4vw 2vw 4vw 2vw;
+    --secao--titulo--padding: 2vw 2vw 2vw 2vw;
+    --branco: #fff;
+    --azul-claro: #457B9D;
+    --gap: 30px
+  }
+
+main{
+    padding: 0px;
+}
+
+.secao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--azul-escuro);
+}
+
+.secao--branca{
+    background-color: var(--branco);
+}
+
+.secao--titulo{
+    font-family: 'Zeyada';
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: var(--secao--titulo--padding);;
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+    background-color: var(--branco);
+}
+
+
+.secao--conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: var(--secao--padding);
+
+}
+
+.secao--info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    justify-content: space-around;
+}
+
+.img--historia{
+    width: 75%;
+    min-width: 300px;
+    padding-bottom: 30px;
+}
+
+.btn{
+    width: 20%;
+    min-width: 100px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #457B9D;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn--mobile{
+    display: none;
+}
+
+.btn--desktop{
+    display: block;
+}
+
+.secao--text{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-right: 10%;
+}
+
+.secao--text-reverse{
+    padding-right: 0px;
+    padding-left: 10%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-45{
+    width: 45%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+
+.secao--text > h2{
+    font-family: 'Zeyada';
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+    color: var(--azul-claro);
+    margin: 0;
+    text-align: center;
+    width: auto;
+}
+
+.secao--text > p{
+    font-family: Sansita, sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--branco);
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    width: auto;
+}
+
+.secao--comentarios{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: var(--azul-claro);
+    box-sizing: border-box;    
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 300px;
+}
+
+.secao--conteudo--center{
+    justify-content: center;
+}
+
+.comentarios--user{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.comentarios--user > img{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.comentarios--user > h3{
+    font-family: 'Zeyada';
+    font-size: clamp(1.5rem, 0.3vw, 1.5rem);
+    width: fit-content;
+    height: fit-content;
+    margin: auto auto auto 0px;
+    padding-left: 15px;
+}
+
+.secao--galeria{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: var(--gap);
+    margin-left: 10%;
+}
+
+.secao--galeria > img{
+    width: 35%;
+    object-fit: contain;
+}
+
+.secao--galeria > .btn{
+    box-sizing: border-box;
+    margin-right: 80%;
+}
+
+.secao--galeria--nogap{
+    gap: 0px;
+    margin: 0;
+    justify-content:space-evenly;
+}
+
+
+.secao--conteudo-reverse{
+}
+
+.azul--claro{
+    color: #1D3557 !important; 
+}
+
+.secao--text > button{
+    margin-top: 50px
+}
+
+@media (max-width: 760px)
+{
+    .secao--conteudo{
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .secao--info{
+        width: 100%;
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .img--historia{
+        width: 70%;
+    }
+
+    .secao--text{
+        width: 100%;
+        padding-right: 20%;
+        padding-left: 20%;
+        box-sizing: border-box;
+    }
+
+    .btn--mobile{
+        margin: 25px;
+        display: block;
+    }
+    
+    .btn--desktop{
+        display: none;
+    }
+
+    .secao--comentarios{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .secao--galeria{        
+        gap: 0px;
+        row-gap: 12px;
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .secao--galeria > img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .secao--conteudo-reverse{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .img--historia{
+        width: 100%;
+    }
+
+    .btn--mobile{
+
+        display: block;
+    }
+    .secao--comentarios{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}

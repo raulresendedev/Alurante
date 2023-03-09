@@ -1,0 +1,77 @@
+.filtro > input{
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.filtro-botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.filtro-botoes > button{
+    color: #F1FAEE;
+    align-items: center;
+    background-color: #1D3557;
+    min-width: 80px;
+    height: 35px;
+    border: 1px solid transparent;
+    margin-right: 15px;
+}
+
+.cardapio{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardapio > img{
+    width: 30%;
+    min-width: 300px;
+    margin-bottom: 50px;
+}
+
+.blog{
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+
+.blog > h2{
+    color: #1D3557;
+    margin-top: 30px;
+}
+
+.blog-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#blog-principal{
+    width: 65%;
+}
+
+.blog-secundario{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+}
+
+.blog-secundario > img{
+    width: 90%;
+}
+
+.blog{
+    background-color: #F1FAEE;
+    margin-bottom: 30px;
+}
